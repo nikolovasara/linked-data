@@ -1,32 +1,30 @@
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns0: <http://webns.net/mvcb/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base          <https://github.com/nikolovasara/linked-data/raw/main/foaf.ttl#> .
+@prefix admin: <http://webns.net/mvcb/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 
-<https://github.com/nikolovasara/linked-data/raw/main/foaf.ttl>
-  a foaf:PersonalProfileDocument ;
-  foaf:maker <https://github.com/nikolovasara/linked-data/raw/main/foaf.ttl#me> ;
-  foaf:primaryTopic <https://github.com/nikolovasara/linked-data/raw/main/foaf.ttl#me> ;
-  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
-  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+<#me>   a                       foaf:Person ;
+        foaf:family_name        "Nikolova" ;
+        foaf:givenname          "Sara" ;
+        foaf:homepage           <https://www.linkedin.com/in/sara-nikolova-166144182/> ;
+        foaf:knows              [ a                  foaf:Person ;
+                                  rdfs:seeAlso       <https://www.linkedin.com/in/kristina-stolikj-1ab354131/> ;
+                                  foaf:mbox_sha1sum  "f111ae5d35debb52653c33c0990b06f5dc33e4b1" ;
+                                  foaf:name          "Kristina Stolikj"
+                                ] ;
+        foaf:knows              [ a                  foaf:Person ;
+                                  rdfs:seeAlso       <https://www.linkedin.com/in/filip-savevski-6565bb1ab/> ;
+                                  foaf:mbox_sha1sum  "3aed5130c08ebc2c97eddf7aec722f346af45933" ;
+                                  foaf:name          "Filip Savevski"
+                                ] ;
+        foaf:mbox_sha1sum       "fc6482fa94a9e913f15bdb78628c9e19d9e321e0" ;
+        foaf:name               "Sara Nikolova" ;
+        foaf:schoolHomepage     <https://finki.ukim.mk/> ;
+        foaf:title              "Ms" ;
+        foaf:workplaceHomepage  <https://www.endava.com/> .
 
-<https://github.com/nikolovasara/linked-data/raw/main/foaf.ttl#me>
-  a foaf:Person ;
-  foaf:name "Sara Nikolova" ;
-  foaf:title "Ms" ;
-  foaf:givenname "Sara" ;
-  foaf:family_name "Nikolova" ;
-  foaf:mbox_sha1sum "fc6482fa94a9e913f15bdb78628c9e19d9e321e0" ;
-  foaf:homepage <https://www.linkedin.com/in/sara-nikolova-166144182/> ;
-  foaf:workplaceHomepage <https://www.endava.com/> ;
-  foaf:schoolHomepage <https://finki.ukim.mk/> ;
-  foaf:knows [
-    a foaf:Person ;
-    foaf:name "Kristina Stolikj" ;
-    foaf:mbox_sha1sum "f111ae5d35debb52653c33c0990b06f5dc33e4b1" ;
-    rdfs:seeAlso <https://www.linkedin.com/in/kristina-stolikj-1ab354131/>
-  ], [
-    a foaf:Person ;
-    foaf:name "Filip Savevski" ;
-    foaf:mbox_sha1sum "3aed5130c08ebc2c97eddf7aec722f346af45933" ;
-    rdfs:seeAlso <https://www.linkedin.com/in/filip-savevski-6565bb1ab/>
-  ] .
+<>      a                     foaf:PersonalProfileDocument ;
+        admin:errorReportsTo  <mailto:leigh@ldodds.com> ;
+        admin:generatorAgent  <http://www.ldodds.com/foaf/foaf-a-matic> ;
+        foaf:maker            <#me> ;
+        foaf:primaryTopic     <#me> .
