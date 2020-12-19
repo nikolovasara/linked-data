@@ -1,1 +1,32 @@
-
+<rdf:RDF
+      xml:base="https://github.com/nikolovasara/linked-data/raw/main/foaf.ttl#"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/">
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:maker rdf:resource="#me"/>
+  <foaf:primaryTopic rdf:resource="#me"/>
+  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:ID="me">
+<foaf:name>Sara Nikolova</foaf:name>
+<foaf:title>Ms</foaf:title>
+<foaf:givenname>Sara</foaf:givenname>
+<foaf:family_name>Nikolova</foaf:family_name>
+<foaf:mbox_sha1sum>fc6482fa94a9e913f15bdb78628c9e19d9e321e0</foaf:mbox_sha1sum>
+<foaf:homepage rdf:resource="https://www.linkedin.com/in/sara-nikolova-166144182/"/>
+<foaf:workplaceHomepage rdf:resource="https://www.endava.com/"/>
+<foaf:schoolHomepage rdf:resource="https://finki.ukim.mk/"/>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Kristina Stolikj</foaf:name>
+<foaf:mbox_sha1sum>f111ae5d35debb52653c33c0990b06f5dc33e4b1</foaf:mbox_sha1sum>
+<rdfs:seeAlso rdf:resource="https://www.linkedin.com/in/kristina-stolikj-1ab354131/"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Filip Savevski</foaf:name>
+<foaf:mbox_sha1sum>3aed5130c08ebc2c97eddf7aec722f346af45933</foaf:mbox_sha1sum>
+<rdfs:seeAlso rdf:resource="https://www.linkedin.com/in/filip-savevski-6565bb1ab/"/></foaf:Person></foaf:knows></foaf:Person>
+</rdf:RDF>
