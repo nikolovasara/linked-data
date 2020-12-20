@@ -8,7 +8,7 @@
         foaf:givenname          "Sara" ;
         foaf:homepage           <https://www.linkedin.com/in/sara-nikolova-166144182/> ;
         foaf:knows              [ a                  foaf:Person ;
-                                  rdfs:seeAlso       <https://www.linkedin.com/in/kristina-stolikj-1ab354131/> ;
+                                  rdfs:seeAlso       <https://gitlab.com/kristinastolic/foaf/-/raw/master/foaf.ttl/> ;
                                   foaf:mbox_sha1sum  "f111ae5d35debb52653c33c0990b06f5dc33e4b1" ;
                                   foaf:name          "Kristina Stolikj"
                                 ] ;
