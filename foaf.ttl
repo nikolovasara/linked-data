@@ -11,12 +11,7 @@
                                   rdfs:seeAlso       <https://gitlab.com/kristinastolic/foaf/-/raw/master/foaf.ttl/> ;
                                   foaf:mbox_sha1sum  "f111ae5d35debb52653c33c0990b06f5dc33e4b1" ;
                                   foaf:name          "Kristina Stolikj"
-                                ] ;
-        foaf:knows              [ a                  foaf:Person ;
-                                  rdfs:seeAlso       <https://www.linkedin.com/in/filip-savevski-6565bb1ab/> ;
-                                  foaf:mbox_sha1sum  "3aed5130c08ebc2c97eddf7aec722f346af45933" ;
-                                  foaf:name          "Filip Savevski"
-                                ] ;
+                                ] .
         foaf:mbox_sha1sum       "fc6482fa94a9e913f15bdb78628c9e19d9e321e0" ;
         foaf:name               "Sara Nikolova" ;
         foaf:schoolHomepage     <https://finki.ukim.mk/> ;
