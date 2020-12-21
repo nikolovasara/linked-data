@@ -11,7 +11,7 @@
                                   rdfs:seeAlso       <https://gitlab.com/kristinastolic/foaf/-/raw/master/foaf.ttl/> ;
                                   foaf:mbox_sha1sum  "f111ae5d35debb52653c33c0990b06f5dc33e4b1" ;
                                   foaf:name          "Kristina Stolikj"
-                                ] .
+                                ] ;
         foaf:mbox_sha1sum       "fc6482fa94a9e913f15bdb78628c9e19d9e321e0" ;
         foaf:name               "Sara Nikolova" ;
         foaf:schoolHomepage     <https://finki.ukim.mk/> ;
